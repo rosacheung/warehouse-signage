@@ -402,7 +402,7 @@ export default function App(){
 
           {/* HOW IT WORKS — light cream bg */}
           <div style={{background:"white",padding:"72px 24px 64px"}}>
-            <div style={{maxWidth:960,margin:"0 auto"}}>
+            <div style={{maxWidth:1400,margin:"0 auto"}}>
               <p style={{textAlign:"center",fontFamily:"Manrope,sans-serif",fontSize:11,fontWeight:700,letterSpacing:"0.12em",textTransform:"uppercase",color:B.orange,marginBottom:10}}>How it works</p>
               <h2 style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:"clamp(22px,4vw,34px)",color:B.dark,textAlign:"center",marginBottom:56}}>Four steps to a production brief</h2>
               <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:24,position:"relative"}}>
@@ -423,7 +423,7 @@ export default function App(){
 
           {/* SIGN CATEGORIES — light steel bg */}
           <div style={{background:B.steel,padding:"64px 24px 72px"}}>
-            <div style={{maxWidth:960,margin:"0 auto"}}>
+            <div style={{maxWidth:1400,margin:"0 auto"}}>
               <p style={{textAlign:"center",fontFamily:"Manrope,sans-serif",fontSize:11,fontWeight:700,letterSpacing:"0.12em",textTransform:"uppercase",color:B.orange,marginBottom:10}}>What's covered</p>
               <h2 style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:"clamp(22px,4vw,34px)",color:B.dark,textAlign:"center",marginBottom:32}}>Sign categories</h2>
               <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:12}}>
@@ -434,7 +434,7 @@ export default function App(){
 
           {/* FOOTER — dark */}
           <div style={{background:B.dark,padding:"44px 28px 36px"}}>
-            <div style={{maxWidth:960,margin:"0 auto"}}>
+            <div style={{maxWidth:1400,margin:"0 auto"}}>
               <div style={{display:"flex",flexWrap:"wrap",alignItems:"flex-start",justifyContent:"space-between",gap:24,marginBottom:32}}>
                 <div>
                   <img src={LOGO_URL_WHITE} alt="UniUni" style={{height:26,marginBottom:12}}
@@ -466,7 +466,7 @@ export default function App(){
 
       {/* ── STEP 1: DETAILS ── */}
       {step===1&&(
-        <div style={{maxWidth:900,margin:"0 auto",padding:"40px 24px 80px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto",padding:"40px 24px 80px"}}>
           <button onClick={()=>setStep(0)} style={{background:"none",border:"none",color:"#888",fontFamily:"Manrope,sans-serif",fontSize:13,cursor:"pointer",marginBottom:20}}>← Back</button>
           <h1 style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:28,color:B.dark,marginBottom:6}}>Your Details</h1>
           <p style={{fontFamily:"Manrope,sans-serif",fontSize:14,color:"#888",marginBottom:32}}>The designer will use this to identify the request and reach you if needed.</p>
@@ -534,7 +534,7 @@ export default function App(){
 
       {/* ── STEP 2: SELECT ── */}
       {step===2&&(
-        <div style={{maxWidth:1280,margin:"0 auto",padding:"32px 24px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto",padding:"32px 24px"}}>
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:24}}>
             <button onClick={()=>setStep(1)} style={{background:"none",border:"none",color:"#888",fontFamily:"Manrope,sans-serif",fontSize:13,cursor:"pointer"}}>← Back</button>
             <h2 style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:22,color:B.dark,margin:0}}>Select Signs — {form.city}</h2>
@@ -600,7 +600,7 @@ export default function App(){
           </div>
           {Object.keys(selected).length>0&&(
             <div style={{position:"fixed",bottom:0,left:0,right:0,background:"white",borderTop:`1px solid ${B.gray}`,padding:"14px 28px",zIndex:40,boxShadow:"0 -4px 20px rgba(0,0,0,0.07)"}}>
-              <div style={{maxWidth:1280,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+              <div style={{maxWidth:1400,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                 <div>
                   <p style={{fontFamily:"Poppins,sans-serif",fontWeight:600,fontSize:14,color:B.dark,margin:0}}>{selectedSigns.length} sign types · {totalItems} total items</p>
                   <p style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:13,color:B.orange,margin:0}}>{sym}{totalCost.toLocaleString()} estimated</p>
@@ -614,7 +614,7 @@ export default function App(){
 
       {/* ── STEP 3: SUMMARY ── */}
       {step===3&&(
-        <div style={{maxWidth:860,margin:"0 auto",padding:"40px 24px 80px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto",padding:"40px 24px 80px"}}>
           <button onClick={()=>setStep(2)} style={{background:"none",border:"none",color:"#888",fontFamily:"Manrope,sans-serif",fontSize:13,cursor:"pointer",marginBottom:20}}>← Back to selection</button>
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:24}}>
             <h2 style={{fontFamily:"Poppins,sans-serif",fontWeight:700,fontSize:26,color:B.dark,margin:0}}>Summary</h2>
